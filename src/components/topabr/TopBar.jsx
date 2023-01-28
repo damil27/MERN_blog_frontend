@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./topbar.css";
 
 const TopBar = () => {
+  const userLoggin = false;
   return (
     <div className="top">
       <div className="topLeft">
@@ -11,19 +13,45 @@ const TopBar = () => {
       </div>
       <div className="topCenter">
         <ul className="topList">
-          <li className="topListItems">Home</li>
-          <li className="topListItems">About</li>
-          <li className="topListItems">Write</li>
-          <li className="topListItems">Logout</li>
+          <li className="topListItems">
+            <Link className="link" to="/">
+              Home
+            </Link>{" "}
+          </li>
+          <li className="topListItems">
+            <Link className="link" to="/">
+              About
+            </Link>
+          </li>
+          <li className="topListItems">
+            {" "}
+            <Link className="link" to="/write">
+              Write
+            </Link>{" "}
+          </li>
+          {userLoggin && <li className="topListItems">Logout</li>}
         </ul>
       </div>
       <div className="topRight">
-        <img
-          className="topImg"
-          src="https://avatars.githubusercontent.com/u/34189426?s=40&v=4"
-          alt="profile-picture"
-        />
-        <i className="fas fa-search"></i>
+        {userLoggin ? (
+          <>
+            <img
+              className="topImg"
+              src="https://avatars.githubusercontent.com/u/34189426?s=40&v=4"
+              alt="profile-picture"
+            />
+            <i className="fas fa-search"></i> :
+          </>
+        ) : (
+          <div className="account">
+            <Link className="link topLogin" to="/login">
+              Login
+            </Link>{" "}
+            <Link className="link" to="/register">
+              Register
+            </Link>{" "}
+          </div>
+        )}
       </div>
     </div>
   );

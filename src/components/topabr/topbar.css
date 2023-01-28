@@ -43,3 +43,14 @@
     margin-right: 10px;
     border-radius: 50%;
 }
+.account{
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+.topLogin{
+    margin-right: 10px;
+}

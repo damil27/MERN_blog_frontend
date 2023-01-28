@@ -22,7 +22,7 @@ const SinglePost = () => {
           <span className="singlePostDate">1 hour ego</span>
         </div>
         <p className="singlePostDesc">
-          lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor facere
+          jorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor facere
           quaerat reprehenderit eius! Incidunt perferendis vitae soluta. Eum rem
           quam porro molestiae reprehenderit inventore itaque maxime iure,
           voluptas maiores aliquam nesciunt placeat temporibus mollitia,

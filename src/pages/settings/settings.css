@@ -50,12 +50,18 @@
 .settingsForm > input{
     height: 30px;
     margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid grey;
 }
 .settingsBtn{
+    width: 150px;
     height: 35px;
     margin-top: 10px;
     background-color: teal;
     color: white;
     border: none;
     cursor: pointer;
+    align-self: center;
+    border-radius: 5px;
+    
 }

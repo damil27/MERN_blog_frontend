@@ -1,0 +1,47 @@
+.login{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.loginForm >label {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.loginForm > input{
+    width: 350px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid teal;
+}
+.loginSubmitBtn{
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    background: teal;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+.register{
+    margin-top: 30px;
+}
+.registerBtn{
+    width: 120px;
+    height: 30px;
+    background: rgba(0, 128, 128, 0.552);
+    border: none;
+    color: white;
+    border-radius: 5px;
+   cursor: pointer;
+
+}
