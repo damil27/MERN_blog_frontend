@@ -1,0 +1,33 @@
+.sidebar{
+    flex: 2;
+    margin-top: 40px;
+
+}
+.sidebarItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.sidebarTitle{
+    font-size: 28px;
+    font-family: 'Lora', serif;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+.sidebarList{
+    list-style: none;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    margin: 0;
+}
+.sidebarListItem{
+    margin-bottom: 5 px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.Icon{
+    font-size: 25px;
+        padding-right: 5px;
+        cursor: pointer;
+}

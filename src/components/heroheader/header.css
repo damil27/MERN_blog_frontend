@@ -1,0 +1,21 @@
+.header{
+    margin-top: 20px;
+    /* padding-top: 0; */
+}
+.headerTItle{
+    font-family: 'Lora', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.headerImg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.headerTitleItem{
+    position: absolute;
+    top: 50px;
+    font-size: 30px ;
+}
