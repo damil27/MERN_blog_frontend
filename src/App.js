@@ -7,30 +7,24 @@ import SInglePage from "./pages/single/SInglePage";
 import Write from "./pages/write/Write";
 import Home from "./pages/home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "./components/context/Context";
 
 function App() {
-  const userLoggin = true;
+  const { user } = useContext(Context);
   return (
     <>
       <Router>
-        <TopBar />
+        <TopBar user={user} />
         <Routes>
           <Route path="/" element={<Home />} />
-          {
-            <Route
-              path="/register"
-              element={userLoggin ? <Home /> : <Register />}
-            />
-          }
-          <Route path="/login" element={userLoggin ? <Home /> : <Login />} />
+          {<Route path="/register" element={user ? <Home /> : <Register />} />}
+          <Route path="/login" element={user ? <Home /> : <Login />} />
           <Route
             path="/Settings"
-            element={userLoggin ? <Settings /> : <Register />}
+            element={user ? <Settings /> : <Register />}
           />
-          <Route
-            path="/Write"
-            element={userLoggin ? <Write /> : <Register />}
-          />
+          <Route path="/Write" element={user ? <Write /> : <Register />} />
           <Route path="/post/:postId" element={<SInglePage />} />
         </Routes>
       </Router>

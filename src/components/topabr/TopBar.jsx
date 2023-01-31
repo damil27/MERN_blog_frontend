@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./topbar.css";
 
-const TopBar = () => {
-  const userLoggin = false;
+const TopBar = ({ user }) => {
   return (
     <div className="top">
       <div className="topLeft">
@@ -29,11 +28,11 @@ const TopBar = () => {
               Write
             </Link>{" "}
           </li>
-          {userLoggin && <li className="topListItems">Logout</li>}
+          {user && <li className="topListItems">Logout</li>}
         </ul>
       </div>
       <div className="topRight">
-        {userLoggin ? (
+        {user ? (
           <>
             <img
               className="topImg"
