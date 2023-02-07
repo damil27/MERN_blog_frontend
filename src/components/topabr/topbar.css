@@ -42,6 +42,8 @@
 .topImg{
     margin-right: 10px;
     border-radius: 50%;
+    height: 48px;
+    width: 48px;
 }
 .account{
     font-family: 'Josefin Sans', sans-serif;

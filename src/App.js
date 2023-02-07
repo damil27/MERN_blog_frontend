@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Router>
-        <TopBar user={user} />
+        <TopBar />
         <Routes>
           <Route path="/" element={<Home />} />
           {<Route path="/register" element={user ? <Home /> : <Register />} />}
